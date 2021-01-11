@@ -52,6 +52,21 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+  // edge cases: negative
+
+  if (n < 0) {
+    n = 0 - n;
+  }
+  // base case when number is either 1 or 0
+  if (n === 0) {
+    return true;
+  } else if (n === 1) {
+    return false;
+  }
+  // recursive condition
+  // recursive algo
+  return isEven(n - 2);
+  // return
 };
 
 // 5. Sum all integers below a given integer.

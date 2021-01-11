@@ -14,7 +14,8 @@ var factorial = function(n) {
   // base case
     // if ending condition is met, or zero is passed, return 1
   if (n === 0) {
-    return 1;    }
+    return 1;
+  }
   // recursive case
   return n * factorial(n-1);
 };
@@ -22,6 +23,16 @@ var factorial = function(n) {
 // 2. Compute the sum of an array of integers.
 // sum([1,2,3,4,5,6]); // 21
 var sum = function(array) {
+  // identify base case
+    // create function to handle base case
+  if (array.length === 0) {
+    return 0;
+  }
+  return array[0] + sum(array.slice(1));
+
+  // recursive
+  // recursive inner function
+  // accumulate the return
 };
 
 // 3. Sum all numbers in an array containing nested arrays.
